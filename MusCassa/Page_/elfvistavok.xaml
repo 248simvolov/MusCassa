@@ -1,0 +1,33 @@
+﻿<Page x:Class="MusCassa.Page_.elfvistavok"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MusCassa.Page_"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="elfvistavok">
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <DataGrid x:Name="dgrid" IsReadOnly="True" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название" Binding="{Binding Название}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Время начала" Binding="{Binding ВремяНачала}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Время окончания" Binding="{Binding ВремяОкончания}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Цена билета" Binding="{Binding ЦенаБилета}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Описание" Binding="{Binding Описание}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Всего билетов" Binding="{Binding МаксимумПосетителей}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Билетов куплено" Binding="{Binding БилетовКуплено}"></DataGridTextColumn>
+                <DataGridTemplateColumn Header="Продать">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="bbyu" Content="Продать" Click="bbyu_Click"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        </StackPanel>
+    </Grid>
+</Page>

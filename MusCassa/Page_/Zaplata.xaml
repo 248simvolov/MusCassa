@@ -1,0 +1,40 @@
+﻿<Page x:Class="MusCassa.Page_.Zaplata"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MusCassa.Page_"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Zaplata">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="18*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Image Name="qr" MouseLeftButtonDown="qr_MouseLeftButtonDown" Grid.Column="1" Grid.Row="1"></Image>
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="2">
+            <TextBlock Text="Количество билетов" Margin="5,5,5,5"></TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="&lt;" x:Name="bmen"  Height="41" Width="41" Margin="5,5,5,5" Click="bmen_Click"></Button>
+                <TextBlock x:Name="tcount"  FontSize="15" Text="1" Height="20" Width="20" Margin="0,5,0,5" TextAlignment="Center"></TextBlock>
+                <Button Content="&gt;" x:Name="bbol" Height="41" Width="41" Margin="5,5,5,5" Click="bbol_Click"></Button>
+            </StackPanel>
+            <TextBlock Text="Цена" Margin="5,5,5,5"></TextBlock>
+            <TextBlock x:Name="tcena" Text="0"  Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="Стоимость" Margin="5,5,5,5"></TextBlock>
+            <TextBlock x:Name="tstoim" Text="0" Margin="5,5,5,5"></TextBlock>
+            <TextBlock Text="К оплате" Margin="5,5,5,5"></TextBlock>
+            <TextBlock x:Name="tploti" Text="0" Margin="5,5,5,5"></TextBlock>
+            <Button x:Name="bkyp" Content="Купить" Click="bkyp_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Page>

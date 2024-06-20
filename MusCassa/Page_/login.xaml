@@ -1,0 +1,38 @@
+﻿<Page x:Class="MusCassa.Page_.login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MusCassa.Page_"
+      mc:Ignorable="d" 
+      d:DesignHeight="250" d:DesignWidth="400"
+      Title="login">
+
+    <Grid>
+        <TabControl>
+            <TabItem Header="Вход для сотрудников">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Логин" Margin="5,5,5,5"></TextBlock>
+                    <TextBox x:Name="sotrlog" Margin="5,5,5,5"></TextBox>
+                    <TextBlock Text="Пароль" Margin="5,5,5,5"></TextBlock>
+                    <PasswordBox x:Name="sotrpass" Margin="5,5,5,5"></PasswordBox>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="sotrvhod" Content="Вход" Margin="5,5,5,5" Click="sotrvhod_Click"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Вход для посетителей">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Логин" Margin="5,5,5,5"></TextBlock>
+                    <TextBox x:Name="polzlog" Margin="5,5,5,5"></TextBox>
+                    <TextBlock Text="Пароль" Margin="5,5,5,5"></TextBlock>
+                    <PasswordBox x:Name="polzpass" Margin="5,5,5,5"></PasswordBox>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="polzvhod" Content="Вход" Margin="5,5,5,5" Click="polzvhod_Click"></Button>
+                        <Button x:Name="polzreg" Content="Регистрация" Margin="5,5,5,5" Click="polzreg_Click"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>

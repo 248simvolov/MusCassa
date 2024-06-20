@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3bd79a583f8e4d0ea39704bb3500a250" Name="Diagram1">
+        <EntityTypeShape EntityType="MusCassaModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusCassaModel.Билет" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusCassaModel.Выставка" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusCassaModel.Должность" Width="1.5" PointX="1.5" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusCassaModel.Посетитель" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusCassaModel.Сотрудник" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusCassaModel.Экспонат" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusCassaModel.ЭкспонатВыставка" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="MusCassaModel.FK_Билет_Выставка" ManuallyRouted="false" />
+        <AssociationConnector Association="MusCassaModel.FK_Билет_Посетитель" ManuallyRouted="false" />
+        <AssociationConnector Association="MusCassaModel.FK_Билет_Сотрудник" ManuallyRouted="false" />
+        <AssociationConnector Association="MusCassaModel.FK_ЭкспонатыВыставки_Выставки" ManuallyRouted="false" />
+        <AssociationConnector Association="MusCassaModel.FK_Сотрудник_Должность" ManuallyRouted="false" />
+        <AssociationConnector Association="MusCassaModel.FK_ЭкспонатыВыставки_Экспонаты" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,55 @@
+﻿<Page x:Class="MusCassa.Page_.LkPolz"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MusCassa.Page_"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LkPolz">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="19*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="20*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Почта:" Grid.Column="1" Grid.Row="1"></TextBlock>
+        <TextBox x:Name="tbPochta" Grid.Column="1" Grid.Row="2"></TextBox>
+        <TextBlock Text="Новая почта:" Grid.Column="1" Grid.Row="3"></TextBlock>
+        <TextBox x:Name="tbnewPochta" Grid.Column="1" Grid.Row="4"></TextBox>
+        <Button Content="Сменить почтовый ящик" x:Name="bChangePochta" Grid.Column="1" Grid.Row="5" Click="bChangePochta_Click"></Button>
+        <TextBlock Visibility="Hidden" x:Name="tCode" Text="Введите код отправленный на новый почтовый ящик:" Grid.Column="1" Grid.Row="6"></TextBlock>
+        <TextBox Visibility="Hidden" x:Name="tbCode" Grid.Column="1" Grid.Row="7"></TextBox>
+        <Button Visibility="Hidden" Content="Применить" x:Name="bAcceptPochta" Grid.Column="1" Grid.Row="8" Click="bAcceptPochta_Click"></Button>
+        <Button Content="Сменить пароль" Name="bPassChanged" Grid.Column="1" Grid.Row="9" Click="bPassChanged_Click"></Button>
+        <TextBlock x:Name="tstarpass" Visibility="Hidden" Text="Старый пароль:" Grid.Column="1" Grid.Row="10"></TextBlock>
+        <PasswordBox Visibility="Hidden" x:Name="pbStar" Grid.Column="1" Grid.Row="11"></PasswordBox>
+        <TextBlock Visibility="Hidden" x:Name="tnewpass" Text="Новый пароль:" Grid.Column="1" Grid.Row="12"></TextBlock>
+        <PasswordBox Visibility="Hidden" x:Name="pbNew" Grid.Column="1" Grid.Row="13"></PasswordBox>
+        <Button Visibility="Hidden" x:Name="bAcceptPass" Content="Применить" Grid.Column="1" Grid.Row="14" Click="bAcceptPass_Click"></Button>
+        <DataGrid x:Name="dgridbileti" Grid.Row="1" Grid.Column="3" Grid.RowSpan="14">
+            
+        </DataGrid>
+    </Grid>
+</Page>

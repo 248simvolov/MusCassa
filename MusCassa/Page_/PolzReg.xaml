@@ -1,0 +1,25 @@
+﻿<Page x:Class="MusCassa.Page_.PolzReg"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MusCassa.Page_"
+      mc:Ignorable="d" 
+      d:DesignHeight="250" d:DesignWidth="400"
+      Title="PolzReg">
+
+    <Grid>
+        <StackPanel Orientation="vertical">
+            <TextBlock Text="Логин"/>
+            <TextBox x:Name="tbLogin"/>
+            <TextBlock Text="Почта"/>
+            <TextBox x:Name="tbPochta"/>
+            <TextBlock Text="Пароль"/>
+            <PasswordBox x:Name="pbPasswrd"/>
+            <Button x:Name="bReg" Content="Регистрация" Click="bReg_Click"/>
+            <TextBlock Text="Код" x:Name="tCode" Visibility="Hidden"/>
+            <TextBox x:Name="tbCode" Visibility="Hidden"/>
+            <Button Content="Принять" x:Name="bAccept" Visibility="Hidden" Click="bAccept_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
